@@ -1,0 +1,26 @@
+module ContadorH(
+    input clk,
+    input reset,
+    output reg [3:0] cont1
+    );
+	 
+ always @(posedge clk or negedge reset)
+ begin
+	if(!reset)
+	begin		
+		cont1 = 0;
+	end
+	else	
+	begin	
+		if(cont1 > 4'1111)		
+			cont1 = 0;
+		
+		else 
+		begin
+			cont1 = cont1 + 1; 				
+		end
+			
+	end
+	
+ end
+endmodule 
