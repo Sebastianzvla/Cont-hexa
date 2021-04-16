@@ -1,4 +1,4 @@
-module DivfrecLLGL(C_50MHz,C_1Hz);
+module Divfrec(C_50MHz,C_1Hz);
 	input C_50MHz;
 	output reg C_1Hz = 1;
 	
